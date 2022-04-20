@@ -5,8 +5,8 @@ export function healthCheck(): string {
   return "ok";
 }
 
-export function buyTicket(whatTicket: string, isVip: bool): void {
-    const ticket = new Ticket(whatTicket, isVip);
+export function buyTicket(activityType: string, isVip: bool): void {
+    const ticket = new Ticket(activityType, isVip);
     tickets.push(ticket);
 }
 
