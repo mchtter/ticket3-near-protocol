@@ -5,12 +5,12 @@ import { AccountId } from "../../utils"
 export class Ticket {
 
     owner: AccountId;
-    whatTicket: string;
+    activityType: string;
     isVip: bool;
 
-    constructor(_whatTicket: string, _isVip: bool) {
+    constructor(_activityType: string, _isVip: bool) {
         this.owner = Context.sender;
-        this.whatTicket = _whatTicket;
+        this.activityType = _activityType;
         this.isVip = _isVip;
     }
     
