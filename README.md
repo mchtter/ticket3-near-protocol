@@ -37,8 +37,8 @@ export function healthCheck(): string {}
 
 
 // send ticket type and vip status to buy ticket
-export function buyTicket(whatTicket: string, isVip: bool): void {}
-// near call $CONTRACT buyTicket '{ "whatTicket":  "Theatre", "isVip": false }'  --accountId mchtter.testnet --amount 2
+export function buyTicket(activityType: string, isVip: bool): void {}
+// near call $CONTRACT buyTicket '{ "activityType":  "Theatre", "isVip": false }'  --accountId mchtter.testnet --amount 2
 
 
 // shows all tickets in the system
